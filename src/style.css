@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background: url(./images/body-bg.jpg) center center/cover no-repeat;
+    min-height: 100%;
 }
 
 header {
@@ -26,8 +26,9 @@ header {
     padding: 25px 8em;
     font-size: 1.2rem;
     background-color: #20272fe7;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
 }
 
 nav {
@@ -35,7 +36,7 @@ nav {
     gap: 2em;
 }
 
-nav > button {
+nav > button, .btn {
     padding: 7px 20px;
     border: none;
     border-radius: 5px;
@@ -45,7 +46,7 @@ nav > button {
     transition: all .3s;
 }
 
-nav > button:hover {
+nav > button:hover, .btn:hover {
     cursor: pointer;
     color: var(--primary-color);
     background-color: var(--hover-color);
@@ -54,4 +55,27 @@ nav > button:hover {
 #title {
     text-decoration: none;
     color: var(--accent-color);
+}
+
+#hero {
+    background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 1)), url(./images/body-bg.jpg) center center/cover no-repeat;
+    padding: 25px 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+    min-height: 100vh;
+    line-height: 70px;
+}
+
+#site-name-main {
+    color: var(--accent-color);
+    letter-spacing: 5px;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }

@@ -1,5 +1,5 @@
 function loadHeader() {
-    const header = document.querySelector('header');
+    const header = document.createElement('header');
     const nav = document.createElement('nav');
     const btnNames = ['Home', 'Menu', 'About'];
     btnNames.forEach(btn => {
