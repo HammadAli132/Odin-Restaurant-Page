@@ -83,7 +83,7 @@ nav > button:hover, .btn:hover {
 }
 
 #menu, #about {
-    padding: 50px 10em;
+    padding: 100px 10em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,6 +150,7 @@ nav > button:hover, .btn:hover {
 
 #about {
     background-color: whitesmoke;
+    padding-top: 50px;
 }
 
 #about-body {
@@ -169,6 +170,32 @@ nav > button:hover, .btn:hover {
 #about-image > img {
     width: 100%;
     border-radius: 5px;
+}
+
+#move-to-top-btn {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    position: fixed;
+    top: 90vh;
+    left: 94vw;
+    height: 50px;
+    width: 50px;
+    box-shadow: 3px 3px 10px var(--secondary-color);
+    transition: all .3s;
+}
+
+#move-to-top-btn:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+#move-to-top-btn > img {
+    width: 100%;
+    margin-bottom: 5px;
 }
 
 footer {
